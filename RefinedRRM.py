@@ -45,7 +45,7 @@ with sync_playwright() as p:
     first_result = page.locator("li.b_algo h2 a").first
     href = first_result.get_attribute("href") # Acquires URL of the first result to avoid opening a new tab.
     
-    print(f"Navigating to: {href}") # Proceed to the acquired URL of the first result and initiate snapshot for the expected.png.
+    print(f"Navigating to: {href}") # Proceed to the acquired URL of the first result and initiate snapshot for the actual.png.
     page.goto(href)
     page.wait_for_load_state("load")
     page.wait_for_timeout(3000)
