@@ -3,7 +3,7 @@
 # 2. Searches for "Rocket Raccoon - Marvel".
 # 3. Click on the first result of the link.
 # 4. To verify that the screenshot of the page matches an expected reference screenshot.
-# The search engine has been changed from Google to Bing due to frequent captcha blocking of this script.
+# The search engine has been changed from Google to Bing due to frequent captcha blocking from Cloudflare of this script.
 
 from PIL import Image, ImageChops
 from playwright.sync_api import sync_playwright
