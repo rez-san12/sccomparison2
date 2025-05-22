@@ -62,7 +62,7 @@ with sync_playwright() as p:
 
     if diff.getbbox():
         print("Verified that the actual.png does not match the expected reference")
-        diff.show()
+        diff.show() # To display the two photos using local image viewer
     else:
         print("Verified that the actual.png matches the expected reference")
 
